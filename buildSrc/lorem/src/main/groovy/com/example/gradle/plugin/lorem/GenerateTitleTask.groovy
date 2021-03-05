@@ -6,7 +6,10 @@ import org.gradle.api.tasks.TaskAction
 
 class GenerateTitleTask extends DefaultTask {
 
-    // String group = "lorem"
+    GenerateTitleTask() {
+        group = "lorem"
+        description = "Generates a lorem title."
+    }
 
     @TaskAction
     def generate() {

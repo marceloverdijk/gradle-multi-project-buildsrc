@@ -5,7 +5,10 @@ import org.gradle.api.tasks.TaskAction
 
 class HelloTask extends DefaultTask {
 
-    // String group = "hello"
+    HelloTask() {
+        group = "other"
+        description = "Prints a hello message."
+    }
 
     @TaskAction
     def foo() {

@@ -6,7 +6,10 @@ import org.gradle.api.tasks.TaskAction
 
 class GenerateParagraphsTask extends DefaultTask {
 
-    // String group = "lorem"
+    GenerateParagraphsTask() {
+        group = "lorem"
+        description = "Generates lorem paragraphs."
+    }
 
     @TaskAction
     def generate() {
