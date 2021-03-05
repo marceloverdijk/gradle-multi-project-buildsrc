@@ -1,0 +1,31 @@
+plugins {
+    id "java"
+}
+
+ext {
+    junitVersion = "4.13"
+    loremVersion = "2.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // runtime subprojects.collect { owner.project(it.path) }
+    runtime subprojects.collect { project(it.path) }
+}
+
+subprojects {
+
+    apply plugin: "java-gradle-plugin"
+    apply plugin: "groovy"
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation "junit:junit:${junitVersion}"
+    }
+}

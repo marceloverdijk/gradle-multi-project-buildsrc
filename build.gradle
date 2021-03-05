@@ -1,0 +1,29 @@
+plugins {
+	id "java"
+}
+
+group = "com.example"
+version = "0.0.1-SNAPSHOT"
+
+apply plugin: com.example.plugin.hello.HelloPlugin
+apply plugin: com.example.plugin.lorem.LoremPlugin
+
+// apply plugin: "com.example.hello"
+// apply plugin: "com.example.lorem"
+
+repositories {
+	mavenCentral()
+}
+
+compileJava {
+	sourceCompatibility = "11"
+}
+
+lorem {
+	titleMin = 5
+	titleMax = 5
+}
+
+test {
+	useJUnitPlatform()
+}
