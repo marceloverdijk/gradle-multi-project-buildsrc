@@ -1,4 +1,4 @@
-package com.example.plugin.lorem
+package com.example.gradle.plugin.lorem
 
 import com.thedeanda.lorem.LoremIpsum
 import org.gradle.api.DefaultTask

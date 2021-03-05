@@ -1,4 +1,4 @@
-package com.example.plugin.lorem
+package com.example.gradle.plugin.lorem
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

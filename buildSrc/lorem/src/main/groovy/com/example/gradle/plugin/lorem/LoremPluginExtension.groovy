@@ -1,4 +1,4 @@
-package com.example.plugin.lorem
+package com.example.gradle.plugin.lorem
 
 class LoremPluginExtension {
 

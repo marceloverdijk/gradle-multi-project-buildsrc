@@ -12,7 +12,6 @@ repositories {
 }
 
 dependencies {
-    // runtime subprojects.collect { owner.project(it.path) }
     runtime subprojects.collect { project(it.path) }
 }
 
